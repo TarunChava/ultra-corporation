@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ultra Corporation</title>
+<style>
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+  }
+
+  header {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    grid-column: 1 / -1;
+    
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .box {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .box:hover {
+    transform: scale(1.05);
+  }
+
+  .box img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .banner {
+    background: linear-gradient(to right, #ff8c00, #ff2d55);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 20px;
+    border-radius: 10px;
+  }
+
+  .banner img {
+    width: 200px;
+    border-radius: 10px;
+    transform: rotateY(-15deg);
+  }
+
+  a.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: white;
+    color: #ff2d55;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+
+  @media (max-width: 600px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+
+    .box img, .grid img {
+      width: 100%;
+    }
+  }
+
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>Ultra Corporation</h1>
+    <p>Making tomorrow easier, today.</p>
+  </header>
+
+  <div class="banner">
+    <h2>Introducing the ULTRA-9 Home Robot</h2>
+    <img src="Main.jpg" alt="Ultra-9 robot">
+    <p>Cleans, waters your plants, and remembers your coffee order.</p>
+    <a class="button" href="#">Buy Now</a>
+  </div>
+
+  <div class="grid">
+    <div class="box">
+      <img src="Clean_Room.jpg" alt="feature 1">
+      <h3>Cleans Rooms</h3>
+      <p>Keeps your house tidy automatically.</p>
+    </div>
+    <div class="box">
+      <img src="Water_Plant.jpg" alt="feature 2">
+      <h3>Waters Plants</h3>
+      <p>Never forgets to water your plants.</p>
+    </div>
+    <div class="box">
+      <img src="Delivery.jpg" alt="feature 3">
+      <h3>Runs Errands</h3>
+      <p>Receives packages and manages deliveries.</p>
+    </div>
+    <div class="box">
+      <img src="Voice.jpg"feature 4">
+      <h3>Talks to You</h3>
+      <p>A friendly voice assistant built in.</p>
+    </div>
+  </div>
+
+</body>
+</html>
